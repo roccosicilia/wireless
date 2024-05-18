@@ -1,6 +1,6 @@
 import pyshark, sys
 
-capure = pyshark.FileCapture(sys.argn[1])
+capure = pyshark.FileCapture(sys.argv[1])
 
 for packet in capure:
     print(packet)
